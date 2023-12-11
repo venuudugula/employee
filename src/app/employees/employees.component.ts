@@ -59,8 +59,8 @@ export class EmployeesComponent {
     )
   }
 
-  delete(i:number){
-    this._employeeService.deleteEmployees(i).subscribe(
+  delete(id:string){
+    this._employeeService.deleteEmployees(id).subscribe(
        (data:any)=>{
         alert("deleted succesfully");
         location.reload()

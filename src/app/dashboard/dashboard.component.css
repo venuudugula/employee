@@ -12,7 +12,7 @@
 .left{
     width: 20%;
     height: 100%;
-    background-color: cornflowerblue;
+    background-color: green;
     padding: 30px;
     overflow: auto;
 
@@ -20,8 +20,8 @@
 
 .right{
     width: 80%;
-    height: 100%;
-    background-color: darkgrey;
+    height: 100vh;
+    background-color:white;
     overflow: auto;
 }
 

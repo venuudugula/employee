@@ -29,7 +29,7 @@ export class EmployeeService {
     return this._httpClient.get(this.baseUrl+ "?sortBy=" +column+ "&order=" +order)
   }
 
-  deleteEmployees(id:number):Observable<any>{
+  deleteEmployees(id:string):Observable<any>{
     return this._httpClient.delete(this.baseUrl+'/'+id)
   }
 

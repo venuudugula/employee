@@ -62,7 +62,7 @@ export class CreateEmployeeComponent {
   }
 
   delete(i:number){
-    this.salaryHikeFormArray.removeAt(i)
+    this.salaryHikeFormArray.removeAt(i)    
   }
 
   submit(){

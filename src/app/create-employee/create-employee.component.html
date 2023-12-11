@@ -42,7 +42,7 @@
 
         <div formGroupName="address">
             <p class="caption">Address :</p>
-            <label for="">Address Lane :</label>
+            <label for="">Address Line :</label>
             <input placeholder="enter addresslane" type="text" formControlName="addresLine">
             <div
                 *ngIf="employeeForm.get('address')?.get('addresLine')?.touched || employeeForm.get('address')?.get('addresLine')?.dirty">

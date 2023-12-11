@@ -54,7 +54,7 @@
 
                 <td>
             <tr class="address">
-                <td>{{employee.address.addresLane}}, <br>{{employee.address.city}},{{employee.address.state}},
+                <td>{{employee.address.addressLine}}, <br>{{employee.address.city}},{{employee.address.state}},
                     <br>{{employee.address.pincode}}
                 </td>
 
@@ -72,7 +72,7 @@
                 {{employee.travelBill}}</td>
             <td *ngIf="employee.workMode === 'remote' "> Wifi Bill: {{employee.wifiBill}}</td>
             <td>
-                <button class="btn btn-danger" (click)="delete(i)">delete</button>
+                <button class="btn btn-danger" (click)="delete(employee.id)">delete</button>
             </td>
             </tr>
         </tbody>
