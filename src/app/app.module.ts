@@ -11,6 +11,7 @@ import { HomeComponent } from './home/home.component';
 import { EmployeesComponent } from './employees/employees.component';
 import { CreateEmployeeComponent } from './create-employee/create-employee.component';
 import { HttpClientModule } from '@angular/common/http';
+import { PackagePipe } from './package.pipe';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { HttpClientModule } from '@angular/common/http';
     HomeComponent,
     EmployeesComponent,
     CreateEmployeeComponent,
+    PackagePipe,
     
   ],
   imports: [
