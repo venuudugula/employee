@@ -42,7 +42,7 @@ p:hover{
     width: 100%;
     color: white;
     cursor: pointer;
-    border-radius: 5px;
+    border-radius:5px;
 }
 
 button{
@@ -54,11 +54,12 @@ button{
     text-align: left;
     font-weight: 800;
     font-size: 22px;
+    margin-left:50px;
   }
   
   .option:hover {
     background-color: darkgrey;
-    width: 100%;
+    width:60%;
     color: white;
     cursor: pointer;
     border-radius: 5px;
@@ -67,8 +68,8 @@ button{
   .selected {
     background-color: darkgrey;
     border-radius:50px;
-    width: 60%;
+    width:60%;
     color: white;
     cursor: pointer;
-    margin-right:100px;
+    margin-right:150px;
 }

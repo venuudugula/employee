@@ -9,7 +9,7 @@
 }
 
 form{
-    background-color: white;
+    background-color:whitesmoke;
     height: 32%;
     text-align: center;
     display: flex;
@@ -21,6 +21,7 @@ form{
     box-shadow: 5px 5px 5px gray;
     border-radius: 10px;
     box-shadow: 5px 5px 10px rgb(47, 71, 116);
+    border-radius: 20px;
 } 
 
 label{
