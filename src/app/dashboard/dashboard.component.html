@@ -1,0 +1,12 @@
+<div class="parent">
+    <div class="left">
+        <h1>Dash Board</h1>
+        <p routerLink="home">Home</p>
+        <p routerLink="create-employee">Create Employee</p>
+        <p routerLink="/employees">All Employees</p>
+        <button (click)="logout()" class="btn btn-warning">Logout</button>
+    </div>
+    <div class="right">
+       <router-outlet></router-outlet>
+    </div>
+</div>

@@ -1,0 +1,44 @@
+*{
+    color: white;
+}
+
+.parent{
+    width: 100%;
+    background-color: rgb(100, 198, 237);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: auto;
+    padding: 30px;
+}
+
+label{
+    display: inline-block;
+    width: 200px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+input{
+    margin: 10px;
+    padding: 5px;
+    outline: 0px;
+    border: 0px;
+    border-radius: 5px;
+    width: 300px;
+    color: black;
+}
+
+.radio{
+    width: 10px;
+}
+
+div p{
+    color: red;
+    margin-left: 210px;
+}
+
+.caption{
+    color: white !important;
+}
+
