@@ -1,6 +1,6 @@
 .parent{
     width: 100%;
-    height: 100vh;
+    height: 100%;
     background-color: white;
     position: relative;
     display: flex;
@@ -12,22 +12,24 @@
 
 .pagination{
     width: 100%;
-    height: 60px;
+    height:20%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: chocolate;
+    background-color:pink;
 }
 
-table{
+.table{
     width: 100%;
+    height:80%;
+
 }
 
 thead{
     background-color: rgb(34, 52, 85);
     color: white;
     text-align: center;
-    height: 50px;
+    height:100px;
     margin-top: 30px;
 }
 
@@ -56,13 +58,6 @@ td{
     border: 0px;
 }
 
-.sorting{
-    width: 30%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 input{
     border: 0px;
     padding: 10px;
@@ -73,4 +68,10 @@ input{
 select{
     width: 100px;
     height: 35px;
+}
+.search{
+    width:30%;
+}
+.sorting{
+    margin-right: 20px;
 }

@@ -12,4 +12,10 @@ export class DashboardComponent {
     this._router.navigateByUrl("/login")
     localStorage.removeItem("token")
   }
+  // To apply selected option highlightened
+  selectedOption: string | null = null;
+
+  selectOption(option: string): void {
+    this.selectedOption = option;
+  }
 }

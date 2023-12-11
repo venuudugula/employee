@@ -1,8 +1,10 @@
 <div class="parent">
     <div class="pagination">
-        <input placeholder="search" type="text" name="" id="" [(ngModel)]="term" (keypress)="search()">
+        <div class="search">
+        <input style="width:80%;border-radius:30px;"  placeholder="search" type="text" [(ngModel)]="term" (keypress)="search()">
+        </div>
         <div class="sorting">
-            <select name="" title="sort" [(ngModel)]="pageNo" id="">
+            <select style="border-radius: 30px;margin-top:35px;height:38px;" name="" title="sort" [(ngModel)]="pageNo" id="">
                 <option>1</option>
                 <option>2</option>
                 <option>3</option>
@@ -11,74 +13,78 @@
                 <option>6</option>
 
             </select>
-            <button class="btn btn-success" (click)="page()">page</button>
-        </div>
-        <div class="sorting">
-            <select name="" title="sort" [(ngModel)]="column" id="">
+            <button style="border-radius: 30px; height: 42px;" class="btn btn-success" (click)="page()">page</button>
+            <br><br>
+            <select  style="border-radius: 30px;margin-top:35px;height:38px;" name="" title="sort" [(ngModel)]="column" id="">
                 <option>name</option>
                 <option>package</option>
                 <option>company</option>
             </select>
-            <select name="" title="order" id="" [(ngModel)]="order">
+            <select  style="border-radius: 30px;margin-top:35px;height:38px;" name="" title="order" id="" [(ngModel)]="order">
                 <option>asc</option>
                 <option>desc</option>
             </select>
-            <button class="btn btn-success" (click)="sort()">sort</button>
+            <button  style="border-radius: 30px;height:38px;"  class="btn btn-success" (click)="sort()">sort</button>
         </div>
     </div>
-    <table>
-        <thead>
-            <th>Id</th>
-            <th>Name</th>
-            <th>Company</th>
-            <th>Role</th>
-            <th>Package</th>
-            <th>Email</th>
-            <th>DOB</th>
-            <th>Address</th>
-            <th>Salary Hikes</th>
-            <th>Work Mode</th>
-            <th>Action</th>
+    <div class="table">
+        <table>
+            <thead>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Gender</th>
+                <th>Company</th>
+                <th>Role</th>
+                <th>Package</th>
+                <th>Email</th>
+                <th>DOB</th>
+                <th>Address</th>
+                <th>Salary Hikes</th>
+                <th>Work Mode</th>
+                <th>Action</th>
 
-        </thead>
-        <tbody>
-            <tr *ngFor="let employee of employees let i=index">
-                <td>{{employee.id}}</td>
-                <td>{{employee.name}}</td>
-                <td>{{employee.company}}</td>
-                <td>{{employee.role}}</td>
-                <td [ngStyle]="{'background-color':employee.package>9 ? 'green' : 'red'}">{{employee.package|package}}</td>
+            </thead>
+            <tbody>
+                <tr *ngFor="let employee of employees let i=index">
+                    <td>{{employee.id}}</td>
+                    <td>{{employee.name}}</td>
+                    <td>{{employee.gender}}</td>
+                    <td>{{employee.company}}</td>
+                    <td>{{employee.role}}</td>
+                    <td [ngStyle]="{'background-color':employee.package>9 ? 'green' : 'red'}">
+                        {{employee.package|package}}</td>
 
-                <td>{{employee.email}}</td>
-                <td>{{employee.dob | date:'yyyy/MM/dd'}} </td>
+                    <td>{{employee.email}}</td>
+                    <td>{{employee.dob | date:'yyyy/MM/dd'}} </td>
 
-                <td>
-            <tr class="address">
-                <td>{{employee.address.addressLine}}, <br>{{employee.address.city}},{{employee.address.state}},
-                    <br>{{employee.address.pincode}}
-                </td>
-
-            </tr>
-            </td>
-            <td>
-                <tr *ngFor="let value of employee.hikes">
-                    <td class="salary">{{value.percentage}} % in</td>
-                    <td class="salary">{{value.year}}</td>
+                    <td>
+                <tr class="address">
+                    <td>{{employee.address.addressLine}}, <br>{{employee.address.city}},{{employee.address.state}},
+                        <br>{{employee.address.pincode}}
+                    </td>
 
                 </tr>
-            </td>
+                </td>
+                <td>
+                    <tr *ngFor="let value of employee.hikes">
+                        <td class="salary">{{value.percentage}} % in</td>
+                        <td class="salary">{{value.year}}</td>
 
-            <td *ngIf="employee.workMode === 'workFromOffice' ">  Travell Fee:
-                {{employee.travelBill}}</td>
-            <td *ngIf="employee.workMode === 'remote' "> Wifi Bill: {{employee.wifiBill}}</td>
-            <td>
-                <button class="btn btn-danger" (click)="delete(employee.id)">delete</button>
-            </td>
-            </tr>
-        </tbody>
+                    </tr>
+                </td>
 
-    </table>
+                <td *ngIf="employee.workMode === 'workFromOffice' "> Travell Fee:
+                    {{employee.travelBill}}</td>
+                <td *ngIf="employee.workMode === 'remote' "> Wifi Bill: {{employee.wifiBill}}</td>
+                <td>
+                    <button class="btn btn-danger" (click)="delete(employee.id)">delete</button>
+                </td>
+                </tr>
+            </tbody>
+
+        </table>
+    </div>
     <div>
-        <button class="btn btn-warning back" routerLink="/dashboard">Back to Dashboard</button>
+        <!-- <button class="btn btn-warning back" routerLink="/dashboard">Back to Dashboard</button> -->
     </div>
 </div>

@@ -26,6 +26,7 @@ export class CreateEmployeeComponent {
 
   public employeeForm: FormGroup = new FormGroup({
     name: new FormControl(null,[ Validators.required]),
+    gender:new FormControl(null,[Validators.required]),
     company: new FormControl(),
     role: new FormControl(null,[Validators.required]),
     email: new FormControl(null,[ Validators.email, Validators.required]),

@@ -41,4 +41,16 @@ div p{
 .caption{
     color: white !important;
 }
+ .radio{
+    width:20px;
+    margin-right:10px;
+ }
+ /* .gender{
 
+    margin-right: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    
+
+ } */

@@ -48,3 +48,27 @@ p:hover{
 button{
     margin-left: 70px;
 }
+.option {
+    margin: 40px 20px ;
+    color: aquamarine;
+    text-align: left;
+    font-weight: 800;
+    font-size: 22px;
+  }
+  
+  .option:hover {
+    background-color: darkgrey;
+    width: 100%;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .selected {
+    background-color: darkgrey;
+    border-radius:50px;
+    width: 60%;
+    color: white;
+    cursor: pointer;
+    margin-right:100px;
+}

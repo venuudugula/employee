@@ -10,11 +10,11 @@ import { NotifyGuard } from './notify.guard';
 
 const routes: Routes = [
   {path:'',component:LoginComponent},
-  {path:'employees',component:EmployeesComponent},
   {path:'login',component:LoginComponent},
   {path:'dashboard', canActivate:[AuthenticationGuard], component:DashboardComponent, children:[
   {path:'home',component:HomeComponent},
   {path:'create-employee', canDeactivate:[NotifyGuard],component:CreateEmployeeComponent},
+  {path:'employees',component:EmployeesComponent},
 
 
   ]},

@@ -1,5 +1,5 @@
 .parent{
-    background-image: url('https://www.taxscan.in/wp-content/uploads/2023/07/TCS-Bench-Marking-Off-Shore-Outsourcing-Off-Shore-Outsourcing-Assessee-Purchases-Software-for-Customers-Software-Developer-Delhi-High-Court-taxscan.jpg');
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuY5v0aJZ1l8WfQGdygWwl0iLZHSZ8HUvGQw&usqp=CAU');
     height: 100%;
     width: 100%;
     background-size: cover;
@@ -16,7 +16,7 @@ h1{
 
 p{
     padding: 20px;
-    color: blue;
+    color: black;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: 600;
 }
@@ -31,12 +31,12 @@ p{
 
 h4{
     margin-left: 50px;
-    color: brown;
+    color:red;
 
 }
 
 h6{
-   color: blueviolet;
+   color:black;
    margin-left: 80px;
    margin-bottom: 30px;
 }
